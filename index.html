@@ -11,6 +11,14 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+
+    <style>
+        #loading,
+        #results {
+            display: none;
+        }
+    </style>
+
 </head>
 
 <body class="bg-dark">
@@ -44,9 +52,9 @@
                         </div>
                     </form>
                     <!-- LOADER -->
-                    <!-- <div id="loading">
+                    <div id="loading">
                         <img src="img/loading.gif">
-                    </div> -->
+                    </div>
 
                     <!-- RESULTS -->
                     <div id="results" class="pt-4">
@@ -59,23 +67,24 @@
                                 <input type="number" class="form-control" id="monthly-payment" disabled>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">Total Payment</span>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Total Payment</span>
+                                </div>
+                                <input type="number" class="form-control" id="total-payment" disabled>
                             </div>
-                            <input type="number" class="form-control" id="total-payment" disabled>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">Total Interest</span>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Total Interest</span>
+                                </div>
+                                <input type="number" class="form-control" id="total-interest" disabled>
                             </div>
-                            <input type="number" class="form-control" id="total-interest" disabled>
                         </div>
                     </div>
                 </div>
